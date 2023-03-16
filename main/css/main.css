@@ -1,0 +1,716 @@
+body{
+    background-color: rgb(3, 9, 26);
+    font-family: 'Russo One', sans-serif;
+
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 5px;
+    background: rgba(255, 255, 255, 0.308);
+    border-radius: 30px;
+}
+/*--------헤드라인--------*/   
+html {
+    scroll-behavior: smooth;
+    }
+    .box1 {
+        height: 100vh;
+        color: white ;
+        background-color:  rgb(3, 9, 26);
+        }
+    
+        .box2 {
+        height: 100vh;
+        color: white ;
+        background-color: rgb(3, 9, 26);
+        }
+
+        .box3{
+        height: 100vh;
+        color: white ;
+        background-color:  rgb(3, 9, 26);
+        }
+    
+        .box4 {
+        height: 100vh;
+        color: white ;
+        background-color: rgb(3, 9, 26);
+        }
+/*---------헤드라인 애니메이션---------*/
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/*---------nav zone---------*/
+
+        
+#nav {
+    padding: 0.5%;
+    margin: 0;
+    border-radius:15px;
+    font-size:larger;
+    text-align:right;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    color: #fff;
+    background: linear-gradient(-45deg, #262157, #253875, #111c5691, rgb(21, 31, 60));
+    animation: AnimationName 15s ease infinite;
+    background-size: 400% 400%;
+    background: linear-gradient(137deg,rgb(21, 31, 60) ,  #111c5691,#253875,#262157 );
+    background-size: 800% 800%;
+        -webkit-animation: AnimationName 16s ease infinite;
+        -moz-animation: AnimationName 16s ease infinite;
+        -o-animation: AnimationName 16s ease infinite;
+        animation: AnimationName 16s ease infinite;
+
+}
+#menu{
+   
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+#menu ul {
+    margin: 15px 20px 0 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 30px;
+    list-style-type: none;
+
+}
+#menu ul a {
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+#imgs{
+    height: 50px;
+    width: 50px;
+}
+/*--------위로 바로가기--------*/
+#progress{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 45px;
+    width: 45px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(224, 224, 224) ;
+    cursor: pointer;
+}
+#progress-value{
+    display: block;
+    height: calc(100% - 7px) ;
+    width: calc(100% - 7px);
+    background-color:  transparent;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+}
+/*--------숨기기--------*/   
+.hidden{
+    position: absolute;
+    overflow: hidden;
+    }
+/*--------인사말--------*/
+#main{
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+.main2{
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+#hi{
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    animation: hi 1.5s ease-out;
+
+}
+
+#welcome{
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    text-align:center;
+    animation: blink .5s infinite, typing 2s steps(20) forwards;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-delay:1s;
+    color: rgb(3, 9, 26);
+}
+
+
+/*--------인사말 애니메이션--------*/
+@keyframes hi{
+    from{
+        opacity: 0;
+
+    }to{
+        opacity: 1;
+    }
+
+}
+@keyframes disappear {
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+    
+}
+ @keyframes blink {
+   50%{
+        border-color: transparent;
+    }
+
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+        color: rgb(3, 9, 26);
+    }
+    to{
+        width: 285px;
+        color: white;
+    }
+}
+@keyframes typing2{
+    from{
+        width: 285px;
+        color: white;
+    }
+    to{
+        width: 0;
+        color: rgb(3, 9, 26);
+    }
+}
+/*--------소개글--------*/
+#d0{    
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    top: 145%;
+    transform: translate(-50%);
+    color: rgb(3, 9, 26);
+    animation: top 2s forwards ;
+}
+    
+#d1{    
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    top: 152%;
+    transform: translate(-50%);
+    color: rgb(3, 9, 26);
+    animation: top .5s forwards;
+}
+#d2{    
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    top: 157%;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(3, 9, 26);
+    animation: top .5s forwards;
+}
+#d3{
+    top: 162%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(3, 9, 26);
+    animation: top .5s forwards;
+}
+#d4{
+    top: 167%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(3, 9, 26);
+    animation: top .5s forwards;
+}
+/*--------소개글 애니메이션--------*/
+@keyframes top{
+    from{
+        color: rgb(3, 9, 26);
+        transform: translateY(0);
+        opacity: 0;
+        display: none;
+    }to{
+        transform: translateY(2);
+        opacity: 1;
+        color: white;
+    }
+
+}
+@keyframes top2{
+    from{
+        transform: translateY(2);
+        opacity: 1;
+        color: white;
+    }to{
+
+        color: rgb(3, 9, 26);
+        transform: translateY(0);
+        opacity: 0;
+        display: none;
+    }
+
+}
+/*--------기술--------*/
+#sk{
+    top: 235%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+    animation: sk 1s forwards;
+    opacity: 0;
+}
+#center{
+    border-radius:100px;
+    background-color: rgb(3, 9, 26);
+    height: 200px;
+    width: 75vw;
+    top: 250%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+    animation: hidden1 .8s forwards ;
+}
+.center1{
+    top: 25%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 25%;
+    transform: translate(-50%); 
+}
+.center2{
+    top: 25%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 37%;
+    transform: translate(-50%);
+}
+.center3{
+    top: 35%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+}
+.center4{
+    top: 25%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 63%;
+    transform: translate(-50%);
+}
+.center5{
+    top: 25%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 75%;
+    transform: translate(-50%);
+}
+#js{
+    width: 100px;
+    height: 100px;
+    animation: hidden3 1s forwards;
+    opacity: 0;
+}
+#py{
+    width: 100px;
+    height: 100px;
+    animation: fuckingbug1 1s forwards;
+    opacity: 0;
+}
+#node{
+    width: 100px;
+    height: 50px;
+    animation: hidden5 1s forwards;
+    opacity: 0;
+}
+#css{
+    width: 70px;
+    height: 100px;
+    animation: hidden6 1s forwards;
+    opacity: 0;
+}
+#html{
+    width: 100px;
+    height: 100px;
+    animation: hidden7 1s forwards;
+    opacity: 0;
+}
+#foot{
+    top: 280%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+    animation: skfoot 1s forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+/*--------기술 애니메이션--------*/
+@keyframes sk{
+    0% {
+        color:rgb(3, 9, 26);
+        top: 240%;
+       opacity: 0; 
+    }
+    100% {
+       color: white;
+       top:235%;
+       opacity: 1;
+    }
+}
+@keyframes skback{
+    0% {
+        color: white;
+        top: 235%;
+        opacity: 1;
+    }
+    100% {    
+        color:rgb(3, 9, 26);   
+        opacity: 0; 
+        top: 240%;
+    }
+}
+@keyframes skfoot{
+    0% {
+        top: 285%;
+        opacity: 0;
+    }
+    100% {       
+        opacity: 1; 
+        top: 280%;
+    }
+}
+@keyframes skfootback{
+    0% {
+        top: 280%;
+        opacity: 1;
+    }
+    100% {       
+        opacity: 0; 
+        top: 285%;
+    }
+}
+@keyframes hidden1{
+    from{
+        background-color: rgb(3, 9, 26);
+    }to{
+        background-color: #242436;
+    }
+}
+@keyframes hidden2{
+    from{
+        background-color: #242436;
+    }to{
+        background-color: rgb(3, 9, 26);
+    }
+}
+/*--------기술 애니메이션 img--------*/
+@keyframes hidden3{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+@keyframes fuckingbug{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+@keyframes hidden5{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes hidden6{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes hidden7{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+/*--------기술 애니메이션 img up--------*/
+@keyframes hidden3-1{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+
+@keyframes fuckingbug1{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes hidden5-1{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+@keyframes hidden6-1{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+@keyframes hidden7-1{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+/*--------연결--------*/
+#c{
+    border-radius:100px;
+    background-color: rgb(3, 9, 26);
+    height: 200px;
+    width: 75vw;
+    top: 350%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+    animation: no .8s forwards;
+}
+#c1{
+    top: 25%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 25%;
+    transform: translate(-50%);
+    animation: bye1 1s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+#c2{
+    top: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    animation: bye2 1s forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+#c3{
+    top: 25%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 75%;
+    transform: translate(-50%);
+    animation: bye3 1s forwards;
+    animation-delay: 2s ;
+    opacity: 0;
+}
+#D{
+    width: 150px;
+    height: 100px;
+    animation: bye1 1s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+#G{
+    width: 100px;
+    height: 100px;
+    animation: bye2 1s forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+#Y{
+    width: 150px;
+    height: 100px;
+    animation: bye3 1s forwards;
+    animation-delay: 2s ;
+    opacity: 0;
+}
+#show1{
+    top: 330%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+    animation: bye1 .8s forwards;
+}
+#s{
+    top: 150%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+    animation: bye1 .8s forwards;
+}
+/*--------연결 애니메이션 1--------*/
+@keyframes bye1{
+    0% {
+        top: 335%;
+        opacity: 0;
+    }
+    100% {       
+        opacity: 1; 
+        top: 330%;
+    }
+}
+@keyframes bye1-1{
+    0% {
+        top: 330%;
+        opacity: 1;
+    }
+    100% {       
+        opacity: 0; 
+        top: 385%;
+    }
+}
+/*--------연결 애니메이션 2--------*/
+@keyframes no{
+    from{
+        background-color: rgb(3, 9, 26);
+    }to{
+        background-color: #242436;
+    }
+}
+@keyframes no2{
+    from{
+        background-color: #242436;
+    }to{
+        background-color: rgb(3, 9, 26);
+    }
+}
+@keyframes bye1{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes bye1-1{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+@keyframes bye2{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes bye2-1{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+@keyframes bye3{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes bye3-1{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+/*--------연결 애니메이션 마지막 부분--------*/
+@keyframes s{
+    0% {
+        top: 155%;
+        opacity: 0;
+    }
+    100% {       
+        opacity: 1; 
+        top: 150%;
+    }
+}
+@keyframes s1{
+    0% {
+        top: 150%;
+        opacity: 1;
+    }
+    100% {       
+        opacity: 0; 
+        top: 155%;
+    }
+}
+#i{
+    top: 400%;
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    left: 90%;
+    transform: translate(-50%);
+}

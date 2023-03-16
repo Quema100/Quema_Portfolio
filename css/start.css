@@ -1,0 +1,167 @@
+body{
+    background: linear-gradient(137deg, #beb7ff, #0b226c, #080d2a, rgb(3, 9, 26));
+    background-size: 800% 800%;
+         
+        -webkit-animation: AnimationName 16s ease infinite;
+        -moz-animation: AnimationName 16s ease infinite;
+        -o-animation: AnimationName 16s ease infinite;
+        animation: AnimationName 16s ease infinite;
+    }
+.container {
+    color: #fff;
+    background: linear-gradient(-45deg, #beb7ff, #2a3761, #15215b91, rgb(83, 98, 138));
+    background-size: 400% 400%;
+    animation: AnimationName 15s ease infinite;
+    width: 100%;
+    height: 100vh;
+}
+
+ /*---------애니메이션---------*/
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+       width: 170px; 
+    }
+}
+/*--------------------------*/
+.welcome{
+    font-family: 'Russo One', sans-serif;
+    position: absolute;
+    font-size: 2rem;
+    left: 50%;
+    top:43%;
+    transform: translate(-50%);
+    text-align:center;
+    border-right: 3px solid white;
+    animation: blink .5s infinite, typing 2s steps(11);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.language-selection{
+    font-size: large;
+    font-family: 'Russo One', sans-serif;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%);
+    text-align:center;
+    animation:blink-effect 3s forwards;
+    animation-delay: 1s;
+    transition: 1s;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
+}
+/*--------------------------*/
+@keyframes blink-effect {
+    0% {
+        opacity: 0;
+        color: #fff;
+    }
+    100%{
+        opacity: 1;
+        color: #fff;
+    }
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+.menu ul {
+    margin: 15px 20px 0 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    list-style-type: none;
+}
+.menu ul a {
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: larger;
+}
+
+
+/*--------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+#menu {
+    font:bold 16px "malgun gothic";
+    width: 140px;
+    height: 50px;
+    background: rgb(26, 34, 55);
+    color: white ;
+    line-height: 50px; 
+    position: absolute;
+    left: 50%;
+    top:58%;
+    transform: translate(-50%);
+    text-align:center;
+}
+
+
+#menu > ul > li {
+    float:left;
+    width:140px;
+    position:relative;
+}
+#menu > ul > li > ul {
+    width:140px;
+    display:none;
+    position: absolute;
+    font-size:14px;
+    background: rgb(26, 34, 55);
+}
+#menu > ul > li:hover > ul {
+    display:block;
+}
+#menu > ul > li > ul > li:hover {
+    background: rgb(147, 135, 235);
+    transition: ease 1s;
+    }
