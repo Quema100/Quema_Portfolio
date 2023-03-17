@@ -262,7 +262,7 @@ let mouse = ()=>{
     D.addEventListener('mouseover',function(){
         let o=document.querySelector('#s')
         o.style.animation='s 1s forwards';
-        o.innerHTML = "Quema#0065 \(제 개인 서버 링크 입니다.\)"
+        o.innerHTML = "Quema#0065"
     }); 
     D.addEventListener('mouseout',function(){
         let o=document.querySelector('#s')
