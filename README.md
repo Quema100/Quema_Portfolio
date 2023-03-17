@@ -19,4 +19,4 @@
 
 한번 잘 찾아보세요.
 
-<img src="/img/무제120_20220727220621.png">
+<a href="https://www.youtube.com/watch?v=ENQHhoKz_7g"><img src="/img/무제120_20220727220621.png"></a>
