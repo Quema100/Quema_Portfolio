@@ -595,7 +595,7 @@ html {
 #show1{
     top: 330%;
     position: absolute;
-    font-size: small;
+    font-size: 35px;
     font-family: 'Russo One', sans-serif;
     left: 50%;
     transform: translate(-50%);
